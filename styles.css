@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: url(https://images.unsplash.com/photo-1482686115713-0fbcaced6e28?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 20px;
+    background: #2c0652a0;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: pulse 8s infinite;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+input{
+    padding: 5px;
+    margin-bottom: 4px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 12px;
+}
+
+a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+span{
+    color: #f200ffed;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 10px;
+    text-align: center; 
+}
+
+button{
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: #ae00f8e4;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+button:hover{
+    background: #4b0469;
+    transition: 0.5s;
+    transform: translateY(-2px);
+}
