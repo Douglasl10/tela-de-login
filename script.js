@@ -15,7 +15,17 @@ form.addEventListener('submit', function(e) {
         newText.textContent = 'Cadastro realizado com sucesso!';
         form.reset();
     }
+
     
 })
+
+function login(){
+   newButton.addEventListener('click', function(){
+    window.location.href = 'index2.html';
+   })
+}
+
+login();
+
 
 
